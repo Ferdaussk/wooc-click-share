@@ -224,31 +224,6 @@ class ClassProdWCLSR{
         return $links;
     }
 
-    public function add_custom_field_to_general_tab(){
-        global $woocommerce, $post;
-
-        echo '<div class="options_group">';
-        // Checkbox Input
-        woocommerce_wp_checkbox(
-            array(
-                'id'            => '_wclsr_custom_checkbox',
-                'label'         => __('Don\'t allow for the product.', 'wooc-click-share'),
-                'description'   => __('If you don\'t want to view social share for the product then check the option.', 'wooc-click-share'),
-                'desc_tip'      => true,
-            )
-        );
-        echo '</div>';
-        ?>
-        <script>
-        </script>
-        <?php
-    }
-
-    public function wclsr_save_general_product_datas($product_id){
-        $checkbox_value = isset($_POST['_wclsr_custom_checkbox']) ? 'yes' : 'no';
-        update_post_meta($product_id, '_wclsr_custom_checkbox', $checkbox_value);
-    }
-
     public function wclsr_pro_shop_page(){
         echo wclsr_sk_single();
     }
@@ -293,9 +268,6 @@ class ClassProdWCLSR{
         if(get_option( 'wclsr-checkout-page-check', 'on' )=='on'){
             add_action('woocommerce_shop_loop_item_title', [$this, 'wclsr_pro_shop_page']); // For the shop page
         }
-        // For the product edit page
-        add_action('woocommerce_product_options_general_product_data', [$this, 'add_custom_field_to_general_tab']);
-        add_action('woocommerce_process_product_meta', [$this, 'wclsr_save_general_product_datas']);
         // Plugins
         add_filter('plugin_action_links', [$this, 'wclsr_settings_plugin_action_link'], 10, 2);
         add_filter('whitelist_options', [$this, 'wclsr_plugin_settings_to_whitelist']);
