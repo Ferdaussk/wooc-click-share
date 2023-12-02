@@ -88,6 +88,7 @@ $ss_all_presets = [
         <div class="wclsr_for_multi_optn">
           <label for="select"><?php echo esc_html__('Add Social:','wooc-click-share'); ?></label>
         <?php do_settings_sections('sk_checkout_settings'); ?>
+        <span class="wclsr_for_add_notice"><?php echo esc_html__('Note: Must you have to add social here.','wooc-click-share'); ?></span>
         </div>   
         <div class="select-container">
           <label class="wclsr-admi-sty" for=""><?php echo esc_html__('Top title', 'wooc-click-share'); ?></label>

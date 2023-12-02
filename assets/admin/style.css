@@ -312,3 +312,10 @@ span#myHeading {
   color: #202020;
   font-weight: 700;
 }
+.wclsr_for_add_notice {
+  color: red;
+  font-size: 12px;
+  text-decoration: underline;
+  padding: 0;
+  margin: 0;
+}
