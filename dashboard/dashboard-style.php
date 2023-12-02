@@ -1,8 +1,8 @@
 <?php
 if ( ! defined( 'ABSPATH' ) ) exit;
 // Taxos label check
-$wclsr_only_countdown_show = get_option( 'wclsr-only-sshare-show', 'show' );
-$wclsr_checkout_page_check = get_option( 'wclsr-checkout-page-check', 'off' );
+$wclsr_only_countdown_show = get_option( 'wclsr-only-sshare-show', 'before_add_to_cart_button' );
+$wclsr_checkout_page_check = get_option( 'wclsr-checkout-page-check' );
 $wclsr_thankyou_page_check = get_option( 'wclsr-thankyou-page-check', 'on' );
 // Label controls
 // *** estimass
@@ -129,7 +129,7 @@ $ss_all_presets = [
           </div>
         </div>
         <div class="list-container wclsr_cmmn_chacthak">
-          <input type="checkbox" name="wclsr-checkout-page-check" value="off" <?php echo checked( $wclsr_checkout_page_check, 'off', false ); ?>>
+          <input type="checkbox" name="wclsr-checkout-page-check" value="on" <?php echo checked( $wclsr_checkout_page_check, 'on', false ); ?>>
           <label class="checker-switch"><?php echo esc_html__('Show in shop page', 'wooc-click-share'); ?></label>
         </div>
         <div class="list-container wclsr_cmmn_chacthak">
