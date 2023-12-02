@@ -265,7 +265,7 @@ class ClassProdWCLSR{
             }
         }
         // Show date
-        if(get_option( 'wclsr-checkout-page-check', 'on' )=='on'){
+        if(get_option( 'wclsr-checkout-page-check')=='on'){
             add_action('woocommerce_shop_loop_item_title', [$this, 'wclsr_pro_shop_page']); // For the shop page
         }
         // Plugins
