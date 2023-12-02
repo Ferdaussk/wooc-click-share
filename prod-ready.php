@@ -34,7 +34,7 @@ class ClassProdWCLSR{
     }
 
     public function wclsr_all_assets_for_the_public(){
-        wp_enqueue_style('wclsr-frerf', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css', null, '6.5.0', 'all');
+        wp_enqueue_script('wclsr-multi-font', plugin_dir_url(__FILE__) . 'assets/public/font.js', array('jquery'), '1.0', true);
         $all_css_js_file = array(
             'wclsr-fontawesome' => array('wclsr_path_define' => WCLSR_ASFSK_ASSETS_PUBLIC_DIR_FILE . '/fontawesome.css'),
             'wclsr-style' => array('wclsr_path_define' => WCLSR_ASFSK_ASSETS_PUBLIC_DIR_FILE . '/style.css'),
