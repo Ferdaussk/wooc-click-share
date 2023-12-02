@@ -1,0 +1,311 @@
+<?php
+if ( ! defined( 'ABSPATH' ) ) exit;
+add_settings_field(
+  'wclsr-check-products-taxo-widget',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+add_settings_field(
+  'wclsr-toptitle',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+add_settings_field(
+  'wclsr-notice-position',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+add_settings_field(
+  'wclsr-shipimg-check',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+// Taxos label check
+add_settings_field(
+  'wclsr-only-sshare-show',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+add_settings_field(
+  'wclsr-checkout-page-check',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+add_settings_field(
+  'wclsr-thankyou-page-check',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+// controls
+// *** estimass
+add_settings_field(
+  'wclsr-estimass-color',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+add_settings_field(
+  'wclsr-estimass-bgcolor',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+add_settings_field(
+  'wclsr-estimass-Hbgcolor',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+add_settings_field(
+  'wclsr-estimass-fontsize',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+add_settings_field(
+  'wclsr-estimass-fontweight',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+add_settings_field(
+  'wclsr-estimass-padding',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+add_settings_field(
+  'wclsr-estimass-margin',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+add_settings_field(
+  'wclsr-estimass-presets',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+add_settings_field(
+  'wclsr-estimdate-color',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+add_settings_field(
+  'wclsr-reason-box-shadow',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+add_settings_field(
+  'wclsr-reason-border-radius',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+add_settings_field(
+  'wclsr-reason-Hbox-shadow',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+add_settings_field(
+  'wclsr-reason-Hborder-radius',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+add_settings_field(
+  'wclsr-reason-fontsize',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+add_settings_field(
+  'wclsr-reason-fontfamilly',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+// *** dimensions
+add_settings_field(
+  'wclsr-estimdate-fontsize',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+add_settings_field(
+  'wclsr-estimdate-fontweight',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+add_settings_field(
+  'wclsr-estimdate-padding',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+add_settings_field(
+  'wclsr-estimdate-margin',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+add_settings_field(
+  'wclsr-toptitle-alignment',
+  '',
+  'wclsr_plugin_function_for_datas_callback',
+  'wclsr-plugin-main-menu',
+  'wclsr-plugin-switch-section'
+);
+
+// Register Settings all
+register_setting(
+  'wclsr-plugin-settings', 
+  'wclsr-check-products-taxo-widget' 
+);
+register_setting(
+  'wclsr-plugin-settings', 
+  'wclsr-toptitle' 
+);
+register_setting(
+  'wclsr-plugin-settings', 
+  'wclsr-notice-position' 
+);
+register_setting(
+  'wclsr-plugin-settings', 
+  'wclsr-shipimg-check' 
+);
+// Taxos label check
+register_setting(
+  'wclsr-plugin-settings', 
+  'wclsr-only-sshare-show' 
+);
+register_setting(
+  'wclsr-plugin-settings', 
+  'wclsr-checkout-page-check' 
+);
+register_setting(
+  'wclsr-plugin-settings', 
+  'wclsr-thankyou-page-check' 
+);
+// controls
+// *** estimass
+register_setting(
+  'wclsr-plugin-settings',
+  'wclsr-estimass-color'
+);
+register_setting(
+  'wclsr-plugin-settings',
+  'wclsr-estimass-bgcolor'
+);
+register_setting(
+  'wclsr-plugin-settings',
+  'wclsr-estimass-Hbgcolor'
+);
+register_setting(
+  'wclsr-plugin-settings',
+  'wclsr-estimass-fontsize'
+);
+register_setting(
+  'wclsr-plugin-settings',
+  'wclsr-estimass-fontweight'
+);
+register_setting(
+  'wclsr-plugin-settings',
+  'wclsr-estimass-padding'
+);
+register_setting(
+  'wclsr-plugin-settings',
+  'wclsr-estimass-margin'
+);
+register_setting(
+  'wclsr-plugin-settings',
+  'wclsr-estimass-presets'
+);
+// *** estimdate
+register_setting(
+  'wclsr-plugin-settings',
+  'wclsr-estimdate-color'
+);
+// *** reason
+register_setting(
+  'wclsr-plugin-settings',
+  'wclsr-reason-box-shadow'
+);
+register_setting(
+  'wclsr-plugin-settings',
+  'wclsr-reason-border-radius'
+);
+register_setting(
+  'wclsr-plugin-settings',
+  'wclsr-reason-Hbox-shadow'
+);
+register_setting(
+  'wclsr-plugin-settings',
+  'wclsr-reason-Hborder-radius'
+);
+register_setting(
+  'wclsr-plugin-settings',
+  'wclsr-reason-fontsize'
+);
+register_setting(
+  'wclsr-plugin-settings',
+  'wclsr-reason-fontfamilly'
+);
+// *** estimdate
+register_setting(
+  'wclsr-plugin-settings',
+  'wclsr-estimdate-fontsize'
+);
+register_setting(
+  'wclsr-plugin-settings',
+  'wclsr-estimdate-fontweight'
+);
+register_setting(
+  'wclsr-plugin-settings',
+  'wclsr-estimdate-padding'
+);
+register_setting(
+  'wclsr-plugin-settings',
+  'wclsr-estimdate-margin'
+);
+register_setting(
+  'wclsr-plugin-settings',
+  'wclsr-toptitle-alignment'
+);
